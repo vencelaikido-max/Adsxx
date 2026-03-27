@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Reklám</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #111, #333);
+            font-family: Arial, sans-serif;
+        }
+
+        .ad-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            background: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <span>Hirdetés</span>
+    <div class="close-btn" onclick="window.close()">X</div>
+</div>
+
+<div class="ad-box">
+
+    <!-- REKLÁM SCRIPT -->
+    <script>
+      atOptions = {
+        'key' : '259f2328ec6fce921143701eee6a2f17',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/259f2328ec6fce921143701eee6a2f17/invoke.js"></script>
+
+</div>
+
+</body>
+</html>
